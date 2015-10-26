@@ -1,0 +1,179 @@
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff2");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: bold;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
+}
+
+.slide_1 {
+	height: 641px;
+	background: url('/images/banner1_large_2x.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.slide_2 {
+	height: 641px;
+	background: url('/images/banner2_large_2x.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.slide_3 {
+	height: 641px;
+	background: url('/images/banner3_large_2x.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.orbit-slide-number, .orbit-timer {
+	display: none;
+}
+
+.orbit-bullets {
+	margin-top: -50px;
+}
+.orbit-bullets li {
+    background: rgba(255, 255, 255, 0.23);
+    cursor: pointer;
+    display: inline-block;
+    float: none;
+    height: 12px;
+    margin-right: 20px;
+    width: 12px;
+    border-radius: 1000px;
+}
+.orbit-bullets li.active {
+    background: rgba(212, 212, 212, 1);
+}
+
+h1 {
+	margin-top: 230px;
+	color: #FFF;
+	font-weight: 100;
+  	font-size: 92.5px;
+	font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
+}
+p {
+	color: #FFF;
+	font-weight: 300;
+  	font-size: 17px;
+	font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
+	margin-top: -20px;
+	letter-spacing: .4px;
+}
+
+header {
+	height: 118px;
+	margin-bottom: -118px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+.logo {
+	width: 258.5px;
+	height: 81px;
+	background: url('/images/logo.png');
+	background-position: top left;
+	background-size: 258.5px 81px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-top: 25px;
+}
+nav {
+	float: right;
+	position: relative;
+	margin-top: 50px;
+}
+nav a {
+	font-weight: 200;
+	color: #FFF;
+  	font-size: 14px;
+	margin-right: 60px;
+}
+nav a:last-child {
+	margin-right: 0px;
+}
+
+
+
+
+.tiles {
+	margin-top: 0px;
+}
+.tiles a {
+	margin: 0 2px;
+	font: 0/0 a;
+    color: transparent;
+}
+.tiles div:first-child a {
+	margin-left: 0;
+}
+.tiles div:last-child a {
+	margin-right: 0;
+}
+.tiles div:first-child a {
+	display: block;
+	background: url('/images/tile_03.png');
+	background-size: 418px 225px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 225px;
+	width: auto;
+}
+.tiles div:nth-child(2) a {
+	display: block;
+	background: url('/images/tile_05.png');
+	background-size: 418px 225px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 225px;
+	width: auto;
+}
+.tiles div:last-child a {
+	display: block;
+	background: url('/images/tile_07.png');
+	background-size: 418px 225px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 225px;
+	width: auto;
+}
