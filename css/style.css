@@ -100,10 +100,10 @@ p {
 .heroslide a.kickstarter {
 	display: inline-block;
 	width: auto;
-  border-radius: 5px;
-  background-color: rgb(46, 204, 109);
-  box-shadow: 0px 4px 0px 0px rgba(60, 134, 90, 1);
-  margin-top: 10px;
+	border-radius: 5px;
+	background-color: rgb(46, 204, 109);
+	box-shadow: 0px 4px 0px 0px rgba(60, 134, 90, 1);
+	margin-top: 10px;
 }
 @media only screen and (min-width: 40.063em) {
 	.heroslide a.kickstarter {
@@ -182,10 +182,10 @@ header .mobile-nav-button {
 	background: rgba(0, 0, 0, 0.5);
 }
 .left-off-canvas-menu, .right-off-canvas-menu {
-     position: fixed;
-     top: 0;
-     z-index: 10;
-  }
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
 
 /* Tiles */
 .tiles { margin-top: 20px; }
@@ -245,11 +245,6 @@ header .mobile-nav-button {
 	}	
 }
 
-
-
-
-
-
 footer.row {
 	height: 150px;
 	margin-top: 40px;
@@ -278,7 +273,6 @@ footer ul {
 	vertical-align: top;
 	margin-bottom: 0; 
 }
-
 footer ul li a {
 	display: none;
 	font-size: 14px;
@@ -288,13 +282,26 @@ footer ul li a {
 footer .navigation {
 	margin: 15px;
 }
+
 @media only screen and (min-width: 40.063em) {
+	footer .navigation {
+		margin: 15px;
+		float: right;
+		margin-top: -20px;
+	}
+}
+@media only screen and (min-width: 64.063em) {
 	footer .navigation {
 		margin: 0px;
 		display: inline;
+		float: none;
+		clear: both;
 	}
 	footer ul li a {
 		display: block;
+	}
+	footer ul {
+		margin-right: 17px;
 	}
 }
 footer ul li:first-child a {
@@ -302,5 +309,5 @@ footer ul li:first-child a {
 	display: inline-block;
 }
 footer a:hover {
-	color: #cad1e8
+	color: #cad1e8;
 }
