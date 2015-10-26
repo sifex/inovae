@@ -143,7 +143,7 @@ header .mobile-nav-button {
 /* Tiles */
 .tiles { margin-top: 20px; }
 .tiles div a {
-	margin: 0 2px;
+	margin: 0 0px;
 	font: 0/0 a;
     color: transparent;
 	display: block;
@@ -151,8 +151,14 @@ header .mobile-nav-button {
 	width: auto;
 	background-repeat: no-repeat;
 }
-.tiles div:first-child a { margin-left: 0; }
-.tiles div:last-child a { margin-right: 0; }
+@media only screen and (min-width: 40.063em) {
+	.tiles div a {
+		margin: 0 2px;
+	}
+	.tiles div:first-child a { margin-left: 0; }
+	.tiles div:last-child a { margin-right: 0; }
+}
+
 .tiles div#engine a {
 	background-image: url('/images/tile_engine_small_2x.png');
 	background-size: 640px 226px;
