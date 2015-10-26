@@ -1,94 +1,45 @@
-/** Ultra Light */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 100;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2");
+html, body {
+	font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
 }
 
-/** Thin */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 200;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
-}
-
-/** Regular */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff2");
-}
-
-/** Medium */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: normal;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
-}
-
-/** Semi Bold */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 500;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2");
-}
-
-/** Bold */ 
-@font-face {
-  font-family: "San Francisco";
-  font-weight: bold;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
-}
-
-.slide_1 {
+/* Hero Slides */
+.heroslide.battlescape {
 	height: 641px;
-	background: url('/images/banner1_large_2x.png');
+	background-image: url('/images/banner_battlescape_large_2x.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
-.slide_2 {
+.heroslide.engine {
 	height: 641px;
-	background: url('/images/banner2_large_2x.png');
+	background-image: url('/images/banner_engine_large_2x.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
-.slide_3 {
+.heroslide.connect {
 	height: 641px;
-	background: url('/images/banner3_large_2x.png');
+	background-image: url('/images/banner_connect_large_2x.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
 
-.orbit-slide-number, .orbit-timer {
-	display: none;
-}
+.orbit-slide-number, .orbit-timer { display: none; }
 
-.orbit-bullets {
-	margin-top: -50px;
-}
-.orbit-bullets li {
-    background: rgba(255, 255, 255, 0.23);
-    cursor: pointer;
-    display: inline-block;
-    float: none;
-    height: 12px;
-    margin-right: 20px;
-    width: 12px;
-    border-radius: 1000px;
-}
-.orbit-bullets li.active {
-    background: rgba(212, 212, 212, 1);
-}
+.orbit-bullets { margin-top: -55px; }
+.orbit-bullets li { background: rgba(255, 255, 255, 0.23); height: 12px; margin-right: 20px; width: 12px; }
+.orbit-bullets li.active { background: rgba(212, 212, 212, 1); }
 
 h1 {
-	margin-top: 230px;
+	margin-top: 270px;
 	color: #FFF;
 	font-weight: 100;
   	font-size: 92.5px;
 	font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
+}
+h1.connected {
+	margin-top: 210px;
 }
 p {
 	color: #FFF;
@@ -97,6 +48,31 @@ p {
 	font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
 	margin-top: -20px;
 	letter-spacing: .4px;
+}
+
+.heroslide a {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 15px 70px;
+	color: #FFF;
+	font-weight: 300;
+	font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
+	font-size: 17px;
+}
+.heroslide a.white {
+	background: rgba(255,255,255,0.15);
+	color: #FFF;
+}
+
+.heroslide .battlescape_links {
+	margin-top: 445px;
+}
+.heroslide a.kickstarter {
+  border-radius: 5px;
+  background-color: rgb(46, 204, 109);
+  box-shadow: 0px 4px 0px 0px rgba(60, 134, 90, 1);
+  margin-left: 20px;
 }
 
 header {
@@ -108,15 +84,15 @@ header {
 	z-index: 999;
 	width: 100%;
 }
-.logo {
+header .logo {
 	width: 258.5px;
 	height: 81px;
-	background: url('/images/logo.png');
+	background-image: url('/images/logo_2x.png');
 	background-position: top left;
 	background-size: 258.5px 81px;
 	background-repeat: no-repeat;
 	float: left;
-	margin-top: 25px;
+	margin-top: 19px;
 }
 nav {
 	float: right;
@@ -129,51 +105,75 @@ nav a {
   	font-size: 14px;
 	margin-right: 60px;
 }
+nav a:hover {
+	color: #cad1e8;
+}
 nav a:last-child {
 	margin-right: 0px;
 }
 
-
-
-
-.tiles {
-	margin-top: 0px;
-}
-.tiles a {
+/* Tiles */
+.tiles { margin-top: 20px; }
+.tiles div a {
 	margin: 0 2px;
 	font: 0/0 a;
     color: transparent;
+	display: block;
+	height: 225px;
+	width: auto;
+	background-repeat: no-repeat;
 }
+.tiles div:first-child a { margin-left: 0; }
+.tiles div:last-child a { margin-right: 0; }
 .tiles div:first-child a {
-	margin-left: 0;
+	background-image: url('/images/tile_engine_large_2x.png');
+	background-size: 418px 225px;
+	background-position: center top;
+}
+.tiles div a {
+	background-image: url('/images/tile_studios_large_2x.png');
+	background-size: 418px 225px;
+	background-position: center top;
 }
 .tiles div:last-child a {
-	margin-right: 0;
-}
-.tiles div:first-child a {
-	display: block;
-	background: url('/images/tile_03.png');
+	background-image: url('/images/tile_battlescape_large_2x.png');
 	background-size: 418px 225px;
 	background-position: center top;
-	background-repeat: no-repeat;
-	height: 225px;
-	width: auto;
 }
-.tiles div:nth-child(2) a {
-	display: block;
-	background: url('/images/tile_05.png');
-	background-size: 418px 225px;
-	background-position: center top;
-	background-repeat: no-repeat;
-	height: 225px;
-	width: auto;
+
+
+
+
+
+
+footer.row {
+	height: 150px;
+	margin-top: 40px;
 }
-.tiles div:last-child a {
-	display: block;
-	background: url('/images/tile_07.png');
-	background-size: 418px 225px;
-	background-position: center top;
-	background-repeat: no-repeat;
-	height: 225px;
-	width: auto;
+footer .border-top {
+	border-top: 1px solid #EEE;
+	padding-top: 20px;
+}
+footer .logo {
+	background-image: url('/images/footer_logo_2x.png');
+	background-size: 217px 68px;
+	height: 68px;
+	width: 217px;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+footer ul {
+	margin-right: 20px;
+	display: inline-block;
+	list-style: none;
+	vertical-align: top;
+}
+footer ul li a {
+	font-size: 14px;
+	color: #AAA;
+	font-weight: 200;
+}
+footer ul li:first-child a {
+	color: #777777;
 }
