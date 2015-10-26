@@ -5,7 +5,7 @@ html, body {
 /* Hero Slides */
 .heroslide.battlescape {
 	height: 641px;
-	background-image: url('/images/banner_battlescape_large_2x.png');
+	background-image: url('/images/banner_battlescape_small_2x.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -28,7 +28,17 @@ html, body {
 .orbit-slide-number, .orbit-timer { display: none; }
 
 .orbit-bullets { margin-top: -55px; }
-.orbit-bullets li { background: rgba(255, 255, 255, 0.23); height: 12px; margin-right: 20px; width: 12px; }
+.orbit-bullets li {
+	background: rgba(255, 255, 255, 0.23);
+	height: 12px;
+	margin-right: 20px;
+	width: 12px;
+	-webkit-transition: background .25s ease;
+	-moz-transition: background .25s ease;
+	-ms-transition: background .25s ease;
+	-o-transition: background .25s ease;
+	transition: background .25s ease;
+}
 .orbit-bullets li.active { background: rgba(212, 212, 212, 1); }
 
 h1 {
@@ -54,7 +64,7 @@ p {
 	display: inline-block;
 	border-radius: 5px;
 	background-color: rgba(0, 0, 0, 0.4);
-	padding: 15px 70px;
+	padding: 12px 70px;
 	color: #FFF;
 	font-weight: 300;
 	font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
@@ -69,10 +79,17 @@ p {
 	margin-top: 445px;
 }
 .heroslide a.kickstarter {
+	display: block;
   border-radius: 5px;
   background-color: rgb(46, 204, 109);
   box-shadow: 0px 4px 0px 0px rgba(60, 134, 90, 1);
-  margin-left: 20px;
+  margin-top: 10px;
+}
+@media only screen and (min-width: 40.063em) {
+	.heroslide a.kickstarter {
+		margin-left: 20px;
+		margin-top: 0;
+	}
 }
 
 header {
@@ -111,6 +128,17 @@ nav a:hover {
 nav a:last-child {
 	margin-right: 0px;
 }
+header .mobile-nav-button {
+	position: fixed;
+	right: 40px;
+	top: 30px;
+	font-size: 40px;
+	color: #FFF;
+	text-shadow: 0px 0px 16px rgba(0, 0, 0, 1);
+}
+.move-left .exit-off-canvas {
+	background: rgba(0, 0, 0, 0.5);
+}
 
 /* Tiles */
 .tiles { margin-top: 20px; }
@@ -125,20 +153,41 @@ nav a:last-child {
 }
 .tiles div:first-child a { margin-left: 0; }
 .tiles div:last-child a { margin-right: 0; }
-.tiles div:first-child a {
-	background-image: url('/images/tile_engine_large_2x.png');
-	background-size: 418px 225px;
+.tiles div#engine a {
+	background-image: url('/images/tile_engine_small_2x.png');
+	background-size: 640px 226px;
 	background-position: center top;
 }
-.tiles div a {
-	background-image: url('/images/tile_studios_large_2x.png');
-	background-size: 418px 225px;
+@media only screen and (min-width: 40.063em) {
+	.tiles div#engine a {
+		background-image: url('/images/tile_engine_large_2x.png');
+		background-size: 418px 225px;
+		background-position: center top;
+	}
+}
+.tiles div#studios a {
+	background-image: url('/images/tile_studios_small_2x.png');
+	background-size: 640px 226px;
 	background-position: center top;
 }
-.tiles div:last-child a {
-	background-image: url('/images/tile_battlescape_large_2x.png');
-	background-size: 418px 225px;
+@media only screen and (min-width: 40.063em) {
+	.tiles div#studios a {
+		background-image: url('/images/tile_studios_large_2x.png');
+		background-size: 418px 225px;
+		background-position: center top;
+	}	
+}
+.tiles div#battlescape a {
+	background-image: url('/images/tile_battlescape_small_2x.png');
+	background-size: 640px 226px;
 	background-position: center top;
+}
+@media only screen and (min-width: 40.063em) {
+	.tiles div#battlescape a {
+		background-image: url('/images/tile_battlescape_large_2x.png');
+		background-size: 418px 225px;
+		background-position: center top;
+	}	
 }
 
 
@@ -159,21 +208,46 @@ footer .logo {
 	background-size: 217px 68px;
 	height: 68px;
 	width: 217px;
+	margin: 0 40px;
 	display: inline-block;
-	margin-right: 40px;
 }
-
+@media only screen and (min-width: 40.063em) {
+	footer .logo {
+		background-image: url('/images/footer_logo_2x.png');
+		background-size: 217px 68px;
+		height: 68px;
+		width: 217px;
+		margin-right: 40px;
+		display: inline-block;
+	}
+}
 footer ul {
-	margin-right: 20px;
+	margin-right: 7px;
 	display: inline-block;
 	list-style: none;
 	vertical-align: top;
+	margin-bottom: 0; 
 }
+
 footer ul li a {
+	display: none;
 	font-size: 14px;
 	color: #AAA;
 	font-weight: 200;
 }
+footer .navigation {
+	margin: 20px;
+}
+@media only screen and (min-width: 40.063em) {
+	footer .navigation {
+		margin: 0px;
+		display: inline;
+	}
+}
 footer ul li:first-child a {
 	color: #777777;
+	display: inline-block;
+}
+footer a:hover {
+	color: #cad1e8
 }
