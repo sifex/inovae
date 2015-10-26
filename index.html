@@ -20,14 +20,16 @@
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
 
-    <!-- Off Canvas Menu -->
-    <aside class="right-off-canvas-menu">
-        <!-- whatever you want goes here -->
-        <ul>
-          <li><a href="#">Item 1</a></li>
-        ...
-        </ul>
-    </aside>
+  	<!-- Off Canvas Menu -->
+  	<aside class="right-off-canvas-menu">
+  		<ul class="off-canvas-list">
+  			<li><a href="#">Company Overview</a></li>
+  			<li><a href="#">I-Novae Engine</a></li>
+  			<li><a href="#">Games</a></li>
+  			<li><a href="#">News</a></li>
+  			<li><a href="#">Contact</a></li>
+  		</ul>
+  	</aside>
 
 	<header>
 		<div class="row">
@@ -136,12 +138,20 @@
 		$(document).foundation({
 			orbit: {
 				animation: 'fade',
-				timer_speed: 7000,
+				timer_speed: 5000,
 				pause_on_hover: true,
-				animation_speed: 500,
+				animation_speed: 400,
 				navigation_arrows: false,
 				bullets: true,
 				swipe: false
+			},
+			offcanvas : {
+				// Sets method in which offcanvas opens.
+				// [ move | overlap_single | overlap ]
+				open_method: 'overlap', 
+				// Should the menu close when a menu link is clicked?
+				// [ true | false ]
+				close_on_click : false
 			}
 		});
 	</script>
