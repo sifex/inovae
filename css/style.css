@@ -99,7 +99,6 @@ p {
 }
 .heroslide a.kickstarter {
 	display: inline-block;
-	width: auto;
 	border-radius: 5px;
 	background-color: rgb(46, 204, 109);
 	box-shadow: 0px 4px 0px 0px rgba(60, 134, 90, 1);
@@ -109,7 +108,23 @@ p {
 	.heroslide a.kickstarter {
 		margin-left: 20px;
 		margin-top: 0;
+		width: auto;
 	}
+}
+.battlescape_links a {
+	width: 80vw;
+}
+@media only screen and (min-width: 40.063em) {
+	.battlescape_links a {
+		width: auto;
+	}
+}
+@media only screen and (min-width: 40.063em) {
+	.tiles div#battlescape a {
+		background-image: url('/images/tile_battlescape_large_2x.png');
+		background-size: 418px 225px;
+		background-position: center top;
+	}	
 }
 
 header {
@@ -237,13 +252,8 @@ header .mobile-nav-button {
 	background-size: 640px 226px;
 	background-position: center top;
 }
-@media only screen and (min-width: 40.063em) {
-	.tiles div#battlescape a {
-		background-image: url('/images/tile_battlescape_large_2x.png');
-		background-size: 418px 225px;
-		background-position: center top;
-	}	
-}
+
+
 
 footer.row {
 	height: 150px;
