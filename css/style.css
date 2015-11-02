@@ -1,28 +1,106 @@
 html, body { font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif }
+
+
+
+/* Battlescape Slide */
+
 .heroslide.battlescape {
     height: 641px;
-    background-image: url('/images/banner_battlescape_small_2x.png');
+    background-image: url('/images/banner_battlescape_small.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
 }
-@media only screen and (min-width: 64.063em) { 
-    .heroslide.battlescape { background-image: url('/images/banner_battlescape_large_2x.png') }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+	.heroslide.battlescape {
+	    background-image: url('/images/banner_battlescape_small_2x.png');
+	}
 }
+
+
+@media only screen and (min-width: 40.063em) { 
+    .heroslide.battlescape { 
+    	background-image: url('/images/banner_battlescape_large.png') 
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
+    .heroslide.battlescape { 
+    	background-image: url('/images/banner_battlescape_large_2x.png') 
+    }
+}
+
+/* End Battlescape Slide */
+
+/* Engine Slide */
+
 .heroslide.engine {
     height: 641px;
-    background-image: url('/images/banner_engine_large_2x.png');
+    background-image: url('/images/banner_engine_small.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+	.heroslide.engine {
+	    background-image: url('/images/banner_engine_small_2x.png');
+	}
+}
+
+
+@media only screen and (min-width: 40.063em) { 
+    .heroslide.engine { 
+    	background-image: url('/images/banner_engine_large.png') 
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
+    .heroslide.engine { 
+    	background-image: url('/images/banner_engine_large_2x.png') 
+    }
+}
+
+/* End Engine Slide */
+
+/* Connect Slide */
+
 .heroslide.connect {
     height: 641px;
-    background-image: url('/images/banner_connect_large_2x.png');
+    background-image: url('/images/banner_connect_small.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+	.heroslide.connect {
+	    background-image: url('/images/banner_connect_small_2x.png');
+	}
+}
+
+
+@media only screen and (min-width: 40.063em) { 
+    .heroslide.connect { 
+    	background-image: url('/images/banner_connect_large.png') 
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
+    .heroslide.connect { 
+    	background-image: url('/images/banner_connect_large_2x.png') 
+    }
+}
+
+/* End Connect Slide */
+
+
+
+
+
+
+
 .orbit-slide-number, .orbit-timer { display: none }
 .orbit-bullets { margin-top: -55px }
     .orbit-bullets li {
