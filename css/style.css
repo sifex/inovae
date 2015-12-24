@@ -1,35 +1,125 @@
-html, body { font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif }
+html, body { font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+figure {margin: 0; padding: 0;}
 
+.content {
+    position: absolute;
+    top: 693px;
+    width: 100%;
+    z-index: 200;
+    background: #FFF;
+}
 
 
 /* Battlescape Slide */
 
 .heroslide.battlescape {
-    height: 641px;
+    height: 693px;
+}
+@media only screen and (min-width: 40.063em) { 
+    .heroslide.battlescape {
+        height: 693px;
+    }
+}  
+
+/*
+.heroslide.battlescape {
+    height: 400px;
     background-image: url('/images/banner_battlescape_small.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
-	.heroslide.battlescape {
-	    background-image: url('/images/banner_battlescape_small_2x.png');
-	}
+    .heroslide.battlescape {
+        background-image: url('/images/banner_battlescape_small_2x.png');
+    }
 }
 
 
 @media only screen and (min-width: 40.063em) { 
     .heroslide.battlescape { 
-    	background-image: url('/images/banner_battlescape_large.png') 
+        background-image: url('/images/banner_battlescape_large.png');
+        background-position: center top;
+        height: 641px;
     }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
     .heroslide.battlescape { 
-    	background-image: url('/images/banner_battlescape_large_2x.png') 
+        background-image: url('/images/banner_battlescape_large_2x.png') 
     }
+} */
+
+.heroslider {
+  position: fixed !important;
+  overflow: visible;
+  width: 100%;
+  height: 693px ;
 }
+.parallax-layer {
+    top: 40px;
+  width: 100%;
+  height: 693px ;
+  position: fixed;
+}
+  .layer-0 {
+    top: 0;
+    z-index: 5;
+    background: #0A061B url('/images/parallax/inp_01_basestars_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .layer-1 {
+    z-index: 5;
+    background-image: url('/images/parallax/inp_02_morestars_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .layer-2 {
+    z-index: 10;
+    background-image: url('/images/parallax/inp_03_evenmorestars_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .layer-3 {
+    z-index: 15;
+    background-image: url('/images/parallax/inp_05_frontstars_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .layer-4 {
+    z-index: 25;
+    background-image: url('/images/parallax/inp_04_bigplanet_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .layer-5 {
+    z-index: 20;
+    background-image: url('/images/parallax/inp_06_smallplanet_christmas_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .layer-6 {
+    z-index: 30;
+    background-image: url('/images/parallax/inp_07_clouds_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .layer-7 {
+    z-index: 35;
+    background-image: url('/images/parallax/inp_08_moreclouds_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 
 /* End Battlescape Slide */
 
@@ -44,21 +134,21 @@ html, body { font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
-	.heroslide.engine {
-	    background-image: url('/images/banner_engine_small_2x.png');
-	}
+    .heroslide.engine {
+        background-image: url('/images/banner_engine_small_2x.png');
+    }
 }
 
 
 @media only screen and (min-width: 40.063em) { 
     .heroslide.engine { 
-    	background-image: url('/images/banner_engine_large.png') 
+        background-image: url('/images/banner_engine_large.png') 
     }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
     .heroslide.engine { 
-    	background-image: url('/images/banner_engine_large_2x.png') 
+        background-image: url('/images/banner_engine_large_2x.png') 
     }
 }
 
@@ -75,21 +165,21 @@ html, body { font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
-	.heroslide.connect {
-	    background-image: url('/images/banner_connect_small_2x.png');
-	}
+    .heroslide.connect {
+        background-image: url('/images/banner_connect_small_2x.png');
+    }
 }
 
 
 @media only screen and (min-width: 40.063em) { 
     .heroslide.connect { 
-    	background-image: url('/images/banner_connect_large.png') 
+        background-image: url('/images/banner_connect_large.png') 
     }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
     .heroslide.connect { 
-    	background-image: url('/images/banner_connect_large_2x.png') 
+        background-image: url('/images/banner_connect_large_2x.png') 
     }
 }
 
@@ -131,16 +221,15 @@ h1 {
 @media only screen and (min-width: 64.063em) { 
     h1 { font-size: 92.5px }
 }
-h1.connected { margin-top: 210px }
 p {
     color: #FFF;
-    font-weight: 300;
+    font-weight: normal;
     font-size: 17px;
     font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
     margin-top: -20px;
     letter-spacing: .4px;
 }
-.heroslide a {
+.heroslide button {
     display: inline-block;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -154,7 +243,6 @@ p {
     background: rgba(255,255,255,0.15);
     color: #FFF;
 }
-.heroslide .battlescape_links { margin-top: 445px }
 .heroslide a.kickstarter {
     display: inline-block;
     border-radius: 5px;
@@ -169,6 +257,7 @@ p {
         width: auto;
     }
 }
+.heroslide .battlescape_links { margin-top: 455px }
 .battlescape_links a { width: 80vw }
 @media only screen and (min-width: 40.063em) { 
     .battlescape_links a { width: auto }
@@ -179,8 +268,17 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 300;
     width: 100%;
+    background: -moz-linear-gradient(top,  rgba(10,6,27,1) 1%, rgba(10,6,27,0.8) 60%, rgba(10,6,27,0.22) 89%, rgba(10,6,27,0) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(10,6,27,1) 1%,rgba(10,6,27,0.8) 60%,rgba(10,6,27,0.22) 89%,rgba(10,6,27,0) 100%); 
+    background: linear-gradient(to bottom,  rgba(10,6,27,1) 1%,rgba(10,6,27,0.8) 60%,rgba(10,6,27,0.22) 89%,rgba(10,6,27,0) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a061b', endColorstr='#000a061b',GradientType=0 ); 
+}
+@media only screen and (min-width: 40.063em) { 
+    header {
+        position: fixed; 
+    }
 }
     header .logo {
         width: 258.5px;
@@ -193,7 +291,7 @@ header {
         display: inline-block;
         margin-top: 19px;
     }
-@media only screen and (min-width: 40.063em) and (max-width: 862px) { 
+@media only screen and (min-width: 40.063em) and (max-width: 1000px) { 
     header .logo {
         margin: 19px auto;
         margin-bottom: 0;
@@ -209,7 +307,7 @@ nav {
     margin: 0;
     margin-top: 50px;
 }
-@media only screen and (min-width: 40.063em) and (max-width: 862px) { 
+@media only screen and (min-width: 40.063em) and (max-width: 1000px) { 
     nav {
         margin: 20px auto;
         float: none;
@@ -218,10 +316,15 @@ nav {
     }
 }
 nav a {
-    font-weight: 200;
+    font-weight: normal;
     color: #FFF;
-    font-size: 14px;
+    font-size: 15px;
     margin-right: 60px;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 1000px) { 
+    nav a {
+        margin-right: 40px;
+    }
 }
 nav a:hover { color: #cad1e8 }
 nav a:last-child { margin-right: 0px }
@@ -233,13 +336,70 @@ header .mobile-nav-button {
     color: #FFF;
     text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6), 0px 0px 7px rgba(0, 0, 0, 0.4);
 }
-.offcanvas-overlap .exit-off-canvas { background: rgba(0, 0, 0, 0.5) }
+
+.mobilenavlogo img {
+    opacity: 0.6; 
+    margin: 15px;
+    width: 200px;
+}
+
+header .sign-in {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    margin-right: 1.9375rem;
+    font-size: 12px;
+    color: #666;
+}
+header .sign-in a {
+    font-size: 12px;
+    color: #777;
+}
+header .sign-in a:nth-child(2) {
+    margin-left: 25px;
+}
+
+@media only screen and (min-width: 40.063em) { 
+    header .sign-in {
+        display: block;
+        top: 10px;
+        right: 0;
+    }
+}
+.offcanvas-overlap .exit-off-canvas { background: rgba(0, 0, 0, 0.5); height: 1000vh; width: 100vw; z-index: 1002; overflow: hidden;}
 .left-off-canvas-menu, .right-off-canvas-menu {
     position: fixed;
     top: 0;
     z-index: 10;
 }
-.tiles { margin-top: 13px }
+
+.off-canvas-wrap {
+    overflow: visible;
+}
+
+
+.noticebar  {
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+@media only screen and (min-width: 64.063em) { 
+    .noticebar  {
+        text-align: center;
+        text-justify: inter-word;
+    }
+}
+.noticebar span {
+    color: #333;
+    padding-left: 20px;
+}
+.noticebar img {
+    margin-top: -2px;
+}
+
+.tiles { margin-top: 3px; max-width: 1920px; }
+
     .tiles div a {
         margin: 0 0px;
         margin-bottom: 4px;
@@ -268,10 +428,11 @@ header .mobile-nav-button {
     background-position: center top;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
-	.tiles div#engine a {
-	    background-image: url('/images/tile_engine_small_2x.png');
-	}
+    .tiles div#engine a {
+        background-image: url('/images/tile_engine_small_2x.png');
+    }
 }
+/*
 @media only screen and (min-width: 40.063em) { 
     .tiles div#engine a {
         background-image: url('/images/tile_engine_large.png');
@@ -280,10 +441,10 @@ header .mobile-nav-button {
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
-	.tiles div#engine a {
+    .tiles div#engine a {
         background-image: url('/images/tile_engine_large_2x.png');
     }
-}
+} */
 /* Engine Tile */
 
 /* Studios Tile */
@@ -293,10 +454,11 @@ header .mobile-nav-button {
     background-position: center top;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
-	.tiles div#studios a {
-	    background-image: url('/images/tile_studios_small_2x.png');
-	}
+    .tiles div#studios a {
+        background-image: url('/images/tile_studios_small_2x.png');
+    }
 }
+/* 
 @media only screen and (min-width: 40.063em) { 
     .tiles div#studios a {
         background-image: url('/images/tile_studios_large.png');
@@ -309,6 +471,7 @@ header .mobile-nav-button {
         background-image: url('/images/tile_studios_large_2x.png');
     }
 }
+*/
 /* End Studios Tile */
 
 /* Battlescape Tile */
@@ -318,10 +481,11 @@ header .mobile-nav-button {
     background-position: center top;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
-	.tiles div#battlescape a {
-	    background-image: url('/images/tile_battlescape_small_2x.png');
-	}
+    .tiles div#battlescape a {
+        background-image: url('/images/tile_battlescape_small_2x.png');
+    }
 }
+/*
 @media only screen and (min-width: 40.063em) { 
     .tiles div#battlescape a {
         background-image: url('/images/tile_battlescape_large.png');
@@ -336,11 +500,11 @@ header .mobile-nav-button {
         background-position: center top;
     }
 }
+*/
 /* End Battlescape Tile */
 
 footer.row {
     height: 150px;
-    margin-top: 40px;
 }
 footer .border-top {
     border-top: 1px solid #EEE;
@@ -368,7 +532,7 @@ footer ul {
         display: none;
         font-size: 14px;
         color: #AAA;
-        font-weight: 200;
+        font-weight: 250;
     }
 footer .navigation { margin: 15px }
 @media only screen and (min-width: 40.063em) { 

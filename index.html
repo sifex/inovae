@@ -13,17 +13,6 @@
 	<link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="/images/favicon/favicon-128.png" sizes="128x128" />
-
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-43361759-5', 'auto');
-	ga('send', 'pageview');
-
-	</script>
 	
 	<script src="js/vendor/modernizr.js"></script>
 
@@ -32,120 +21,137 @@
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
 
+
   	<!-- Off Canvas Menu -->
   	<aside class="right-off-canvas-menu">
   		<ul class="off-canvas-list">
-  			<li><a href="#">Company Overview</a></li>
-  			<li><a href="#">I-Novae Engine</a></li>
+  			<li class="mobilenavlogo">
+  				<img src="https://inovae.thisisaon.io/images/footer_logo_2x.png">
+  			</li>
+  			<li><label>Navigation</label></li>
+  			<li><a href="https://inovaestudios.com/CompanyOverview">Company Overview</a></li>
+  			<li><a href="https://inovaestudios.com/Technology">I-Novae Engine</a></li>
+  			<li><a href="https://forums.inovaestudios.com">Community</a></li>
   			<li><a href="#">Games</a></li>
-  			<li><a href="#">News</a></li>
-  			<li><a href="#">Contact</a></li>
+  			<li><a href="https://inovaestudios.com/News">News</a></li>
+  			<li><label>Sign in and Contact</label></li>
+  			<li><a href="#">Sign In</a></li>
+  			<li><a href="mailto:chess2ryme@gmail.com">Contact Us</a></li>
   		</ul>
   	</aside>
 
 	<header>
 		<div class="row">
-			<div class="small-12 columns">    
+			<div class="small-12 columns">   
 				<a href=""><div class="logo"></div></a>
 				<nav class="hide-for-small">
 					<a href="https://inovaestudios.com/CompanyOverview">Company Overview</a>
 					<a href="https://inovaestudios.com/Technology">I-Novae Engine</a>
+					<a href="https://forums.inovaestudios.com">Community</a>
 					<a href="#">Games</a>
 					<a href="https://inovaestudios.com/News">News</a>
-					<a href="mailto:contact@inovaestudios.com">Contact</a>
 				</nav>
     			<a class="fi-list mobile-nav-button right-off-canvas-toggle hide-for-medium-up" href="#" ></a>
+				<div class="sign-in">
+					<a>Sign In</a>
+					<a href="mailto:chess2ryme@gmail.com">Contact Us</a>
+				</div>
 			</div>
 		</div>
 	</header>
 
 
 	<ul class="heroslider" data-orbit>
-		<li class="heroslide battlescape">
-			<div class="row">
-				<div class="small-12 small-centered columns text-center">
-					<div class="battlescape_links">
-						<a href="https://inovaestudios.com/Battlescape">Learn More</a>
-						<a href="https://www.kickstarter.com/projects/309114309/infinity-battlescape" class="kickstarter">Pledge on Kickstarter</a>
+		<a href="https://www.inovaestudios.com/battlescape">
+			<li class="heroslide battlescape">
+					<div class="parallax-layer layer-0" data-parallax-speed="0" data-max-scroll="614"></div>
+					<div class="parallax-layer layer-1" data-parallax-speed="0.1.5" data-max-scroll="614"></div>
+					<div class="parallax-layer layer-2" data-parallax-speed="0.2" data-max-scroll="614"></div>
+					<div class="parallax-layer layer-3" data-parallax-speed="0.25" data-max-scroll="614"></div>
+					<div class="parallax-layer layer-4" data-parallax-speed="0.6" data-max-scroll="614"></div>
+					<div class="parallax-layer layer-5" data-parallax-speed="0.4" data-max-scroll="614"></div>
+					<div class="parallax-layer layer-6" data-parallax-speed="0.1" data-max-scroll="614"></div>
+					<div class="parallax-layer layer-7 " data-parallax-speed="0.3" data-max-scroll="614"></div>
+			</li>
+		</a> <!-- 
+		<a href="https://inovaestudios.com/Technology">
+			<li class="heroslide engine">
+				<div class="row">
+					<div class="small-12 columns text-right">
+						<h1>I-Novae Engine</h1>
+						<p>Take a closer look at some of the environments available in our cutting edge technology ›</p>
 					</div>
 				</div>
-			</div>
-		</li>
-		<li class="heroslide engine">
-			<div class="row">
-				<div class="small-12 columns text-right">
-
-					<h1>I-Novae Engine</h1>
-					<p>Take a closer look at some of the environments available in our cutting edge technology.</p>
-					<a href="" class="white">See More</a>
+			</li>
+		</a>
+		<a href="https://forums.inovaestudios.com/">
+			<li class="heroslide connect">
+				<div class="row">
+					<div class="small-12 columns">
+						<h1 class="connected">Stay Connected</h1>
+						<p>We have a vibrant, dedicated community, check out our forums ›</p>
+					</div>
 				</div>
-			</div>
-		</li>
-		<li class="heroslide connect">
-			<div class="row">
-				<div class="small-12 columns">
-					<h1 class="connected">Stay Connected</h1>
-					<p>We have a vibrant, dedicated community, check out our forums!</p>
-					<a href="">Join the Conversation</a>
-				</div>
-			</div>
-
-		</li>
-
+			</li>
+		</a> -->
 	</ul>
 
-	<div class="row collapse tiles">
-		<div class="small-12 medium-4 columns" id="engine">
-			<a href="https://inovaestudios.com/Technology">Learn more about I-Novae Engine.</a>
-		</div>
-		<div class="small-12 medium-4 columns" id="studios">
-			<a href="https://inovaestudios.com/CompanyOverview">Learn more about I-Novae Studios.</a>
-		</div>
-		<div class="small-12 medium-4 columns" id="battlescape">
-			<a href="https://inovaestudios.com/Battlescape">Learn more about Infinity: Battlescape</a>
-		</div>
-	</div>
+	<div class="content">
 
-	<footer class="row collapse">
-		<div class="small-12 columns border-top">
-			<div class="logo"></div>
-			<div class="navigation">
-				<ul>
-					<li><a href="https://inovaestudios.com/CompanyOverview">Company Overview</a></li>
-					<li><a href="https://inovaestudios.com/CompanyOverview">Our Story</a></li>
-					<li><a href="https://inovaestudios.com/CompanyOverview/Team">Meet the Team</a></li>
-				</ul>
-				<ul>
-					<li><a href="https://inovaestudios.com/Technology">I-Novae Engine</a></li>
-					<li><a href="https://inovaestudios.com/Technology">Features</a></li>
-					<li><a href="https://inovaestudios.com/Technology">Licensing</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Games</a></li>
-					<li><a href="https://inovaestudios.com/Battlescape">Infinity: Battlescape</a></li>
-				</ul>
-				<ul>
-					<li><a href="https://inovaestudios.com/News">News</a></li>
-				</ul>
-				<ul>
-					<li><a href="http://inovaekeith.blogspot.com.au/">Developer Blog</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
+		<div class="row collapse tiles">
+			<div class="small-12 medium-4 columns" id="engine">
+				<a href="https://inovaestudios.com/Technology">Learn more about I-Novae Engine.</a>
+			</div>
+			<div class="small-12 medium-4 columns" id="studios">
+				<a href="https://inovaestudios.com/CompanyOverview">Learn more about I-Novae Studios.</a>
+			</div>
+			<div class="small-12 medium-4 columns" id="battlescape">
+				<a href="https://inovaestudios.com/Battlescape">Learn more about Infinity: Battlescape</a>
 			</div>
 		</div>
-	</footer>
-   
-  <!-- close the off-canvas menu -->
-  <a class="exit-off-canvas"></a>
+
+		<footer class="row collapse">
+			<div class="small-12 columns border-top">
+				<div class="logo"></div>
+				<div class="navigation">
+					<ul>
+						<li><a href="https://inovaestudios.com/CompanyOverview">Company Overview</a></li>
+						<li><a href="https://inovaestudios.com/CompanyOverview">Our Story</a></li>
+						<li><a href="https://inovaestudios.com/CompanyOverview/Team">Meet the Team</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://inovaestudios.com/Technology">I-Novae Engine</a></li>
+						<li><a href="https://inovaestudios.com/Technology">Features</a></li>
+						<li><a href="https://inovaestudios.com/Technology">Licensing</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Games</a></li>
+						<li><a href="https://inovaestudios.com/Battlescape">Infinity: Battlescape</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://inovaestudios.com/News">News</a></li>
+						<li><a href="http://inovaekeith.blogspot.com.au/">Developer Blog</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	
+	   
 
   </div>
+		<!-- close the off-canvas menu -->
+		<a class="exit-off-canvas"></a>
 </div>
 
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/foundation.min.js"></script>
-  <script src="js/foundation/foundation.offcanvas.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/foundation/foundation.offcanvas.js"></script>
 	<script>
 		$(document).foundation({
 			orbit: {
@@ -154,18 +160,24 @@
 				pause_on_hover: true,
 				animation_speed: 400,
 				navigation_arrows: false,
-				bullets: true,
+				bullets: false,
 				swipe: false
 			},
 			offcanvas : {
-				// Sets method in which offcanvas opens.
-				// [ move | overlap_single | overlap ]
-				open_method: 'overlap', 
-				// Should the menu close when a menu link is clicked?
-				// [ true | false ]
+				open_method: 'overlap',
 				close_on_click : false
 			}
 		});
+	</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-43361759-5', 'auto');
+		ga('send', 'pageview');
+
 	</script>
 </body>
 </html>
