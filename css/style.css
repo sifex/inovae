@@ -6,7 +6,7 @@ figure {margin: 0; padding: 0;}
     top: 693px;
     width: 100%;
     z-index: 200;
-    background: #FFF;
+    background: #fafafa;
 }
 
 
@@ -546,6 +546,7 @@ header .sign-in a:nth-child(2) {
 
 footer.row {
     height: 150px;
+    margin-top: 50px;
 }
 footer .border-top {
     border-top: 1px solid #EEE;
