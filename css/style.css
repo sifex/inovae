@@ -463,6 +463,7 @@ header .sign-in a:nth-child(2) {
 
 
 /* Engine Tile */
+
 .tiles div#engine a {
     background-image: url('/images/tile_engine_small.png');
     background-size: 640px 226px;
@@ -473,20 +474,32 @@ header .sign-in a:nth-child(2) {
         background-image: url('/images/tile_engine_small_2x.png');
     }
 }
-/*
 @media only screen and (min-width: 40.063em) { 
     .tiles div#engine a {
-        background-image: url('/images/tile_engine_large.png');
+        background-image: url('/images/tile_engine_medium.png');
         background-size: 418px 225px;
         background-position: center top;
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
     .tiles div#engine a {
-        background-image: url('/images/tile_engine_large_2x.png');
+        background-image: url('/images/tile_engine_medium_2x.png');
     }
-} */
-/* Engine Tile */
+}
+@media only screen and (min-width: 64.063em) { 
+    .tiles div#engine a {
+        background-image: url('/images/tile_engine_small.png');
+        background-size: 640px 226px;
+        background-position: center top;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 64.063em), only screen and (min-resolution: 144dpi) and (min-width: 64.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 64.063em), only screen and (min-resolution: 144dppx) and (min-width: 64.063em) {
+    .tiles div#engine a {
+        background-image: url('/images/tile_engine_small_2x.png');
+    }
+}
+
+/* End Engine Tile */
 
 /* Studios Tile */
 .tiles div#studios a {
@@ -499,20 +512,33 @@ header .sign-in a:nth-child(2) {
         background-image: url('/images/tile_studios_small_2x.png');
     }
 }
-/* 
+
 @media only screen and (min-width: 40.063em) { 
     .tiles div#studios a {
-        background-image: url('/images/tile_studios_large.png');
+        background-image: url('/images/tile_studios_medium.png');
         background-size: 418px 225px;
         background-position: center top;
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
     .tiles div#studios a {
-        background-image: url('/images/tile_studios_large_2x.png');
+        background-image: url('/images/tile_studios_medium_2x.png');
     }
 }
-*/
+
+@media only screen and (min-width: 64.063em) { 
+    .tiles div#studios a {
+        background-image: url('/images/tile_studios_small.png');
+        background-size: 640px 226px;
+        background-position: center top;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 64.063em), only screen and (min-resolution: 144dpi) and (min-width: 64.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 64.063em), only screen and (min-resolution: 144dppx) and (min-width: 64.063em) {
+    .tiles div#studios a {
+        background-image: url('/images/tile_studios_small_2x.png');
+    }
+}
+
 /* End Studios Tile */
 
 /* Battlescape Tile */
@@ -526,27 +552,37 @@ header .sign-in a:nth-child(2) {
         background-image: url('/images/tile_battlescape_small_2x.png');
     }
 }
-/*
+
 @media only screen and (min-width: 40.063em) { 
     .tiles div#battlescape a {
-        background-image: url('/images/tile_battlescape_large.png');
+        background-image: url('/images/tile_battlescape_medium.png');
         background-size: 418px 225px;
         background-position: center top;
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
     .tiles div#battlescape a {
-        background-image: url('/images/tile_battlescape_large_2x.png');
-        background-size: 418px 225px;
+        background-image: url('/images/tile_battlescape_medium_2x.png');
+    }
+}
+@media only screen and (min-width: 64.063em) { 
+    .tiles div#battlescape a {
+        background-image: url('/images/tile_battlescape_small.png');
+        background-size: 640px 226px;
         background-position: center top;
     }
 }
-*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 64.063em), only screen and (min-resolution: 144dpi) and (min-width: 64.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 64.063em), only screen and (min-resolution: 144dppx) and (min-width: 64.063em) {
+    .tiles div#battlescape a {
+        background-image: url('/images/tile_battlescape_small_2x.png');
+    }
+}
+
 /* End Battlescape Tile */
 
 footer.row {
     height: 150px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 footer .border-top {
     border-top: 1px solid #EEE;
