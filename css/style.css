@@ -66,59 +66,100 @@ figure {margin: 0; padding: 0;}
   .layer-0 {
     top: 0;
     z-index: 5;
-    background: #0A061B url('/images/parallax/inp_01_basestars_2x.png');
+    background-color: #0A061B;
+    background-image: url('/images/parallax/inp_01_basestars.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-0 {
+        background-image: url('/images/parallax/inp_01_basestars_2x.png');
+    }
   }
   .layer-1 {
     z-index: 5;
-    background-image: url('/images/parallax/inp_02_morestars_2x.png');
+    background-image: url('/images/parallax/inp_02_morestars.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-1 {
+        background-image: url('/images/parallax/inp_02_morestars_2x.png');
+    }
   }
   .layer-2 {
     z-index: 10;
-    background-image: url('/images/parallax/inp_03_evenmorestars_2x.png');
+    background-image: url('/images/parallax/inp_03_evenmorestars.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-2 {
+        background-image: url('/images/parallax/inp_03_evenmorestars_2x.png');
+    }
   }
   .layer-3 {
     z-index: 15;
-    background-image: url('/images/parallax/inp_05_frontstars_2x.png');
+    background-image: url('/images/parallax/inp_05_frontstars.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-3 {
+        background-image: url('/images/parallax/inp_05_frontstars_2x.png');
+    }
   }
   .layer-4 {
     z-index: 25;
-    background-image: url('/images/parallax/inp_04_bigplanet_2x.png');
+    background-image: url('/images/parallax/inp_04_bigplanet.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-4 {
+        background-image: url('/images/parallax/inp_04_bigplanet_2x.png');
+    }
   }
   .layer-5 {
     z-index: 20;
-    background-image: url('/images/parallax/inp_06_smallplanet_christmas_2x.png');
+    background-image: url('/images/parallax/inp_06_smallplanet_christmas.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-5 {
+        background-image: url('/images/parallax/inp_06_smallplanet_christmas_2x.png');
+    }
   }
   .layer-6 {
     z-index: 30;
-    background-image: url('/images/parallax/inp_07_clouds_2x.png');
+    background-image: url('/images/parallax/inp_07_clouds.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
   }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-6 {
+        background-image: url('/images/parallax/inp_07_clouds_2x.png');
+    }
+  }
   .layer-7 {
     z-index: 35;
-    background-image: url('/images/parallax/inp_08_moreclouds_2x.png');
+    background-image: url('/images/parallax/inp_08_moreclouds.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-7 {
+        background-image: url('/images/parallax/inp_08_moreclouds_2x.png');
+    }
   }
 
 /* End Battlescape Slide */
