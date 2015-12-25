@@ -161,6 +161,13 @@ figure {margin: 0; padding: 0;}
         background-image: url('/images/parallax/inp_08_moreclouds_2x.png');
     }
   }
+  .layer-8 {
+    z-index: 35;
+    background-image: url('/images/parallax/inp_09_title_2x.png');
+    background-size: auto 653px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 
 /* End Battlescape Slide */
 
