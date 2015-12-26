@@ -163,11 +163,33 @@ figure {margin: 0; padding: 0;}
   }
   .layer-8 {
     z-index: 35;
-    background-image: url('/images/parallax/inp_09_title_2x.png');
+    background-image: url('/images/parallax/inp_09_title_small.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
   }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
+    .layer-8 {
+        background-image: url('/images/parallax/inp_09_title_small_2x.png');
+    }
+  }
+
+@media only screen and (min-width: 40.063em) { 
+    .layer-8 { 
+        z-index: 35;
+        background-image: url('/images/parallax/inp_09_title_medium.png');
+        background-size: auto 653px;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+}
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
+    .layer-8 { 
+        background-image: url('/images/parallax/inp_09_title_medium_2x.png');
+    }
+}
+
 
 /* End Battlescape Slide */
 
@@ -415,11 +437,11 @@ header .sign-in a:nth-child(2) {
         right: 0;
     }
 }
-.offcanvas-overlap .exit-off-canvas { background: rgba(0, 0, 0, 0.5); height: 1000vh; width: 100vw; z-index: 1002; overflow: hidden;}
+.offcanvas-overlap .exit-off-canvas { background: rgba(0, 0, 0, 0.5); height: 100vh; width: 100vw; z-index: 1002; overflow: hidden; position: fixed;}
 .left-off-canvas-menu, .right-off-canvas-menu {
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 1003;
 }
 
 .off-canvas-wrap {
