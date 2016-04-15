@@ -15,11 +15,11 @@ figure {margin: 0; padding: 0;}
 .heroslide.battlescape {
     height: 693px;
 }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     .heroslide.battlescape {
         height: 693px;
     }
-}  
+}
 
 /*
 .heroslide.battlescape {
@@ -37,8 +37,8 @@ figure {margin: 0; padding: 0;}
 }
 
 
-@media only screen and (min-width: 40.063em) { 
-    .heroslide.battlescape { 
+@media only screen and (min-width: 40.063em) {
+    .heroslide.battlescape {
         background-image: url('/images/banner_battlescape_large.png');
         background-position: center top;
         height: 641px;
@@ -46,8 +46,8 @@ figure {margin: 0; padding: 0;}
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
-    .heroslide.battlescape { 
-        background-image: url('/images/banner_battlescape_large_2x.png') 
+    .heroslide.battlescape {
+        background-image: url('/images/banner_battlescape_large_2x.png')
     }
 } */
 
@@ -62,7 +62,6 @@ figure {margin: 0; padding: 0;}
   width: 100%;
   height: 693px ;
   position: fixed;
-  transition: transform 700ms ease
 }
   .layer-0 {
     top: 0;
@@ -128,14 +127,14 @@ figure {margin: 0; padding: 0;}
   }
   .layer-5 {
     z-index: 20;
-    background-image: url('/images/parallax/inp_06_smallplanet_christmas.png');
+    background-image: url('/images/parallax/inp_06_smallplanet.png');
     background-size: auto 653px;
     background-position: top center;
     background-repeat: no-repeat;
   }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dppx) {
     .layer-5 {
-        background-image: url('/images/parallax/inp_06_smallplanet_christmas_2x.png');
+        background-image: url('/images/parallax/inp_06_smallplanet_2x.png');
     }
   }
   .layer-6 {
@@ -175,8 +174,8 @@ figure {margin: 0; padding: 0;}
     }
   }
 
-@media only screen and (min-width: 40.063em) { 
-    .layer-8 { 
+@media only screen and (min-width: 40.063em) {
+    .layer-8 {
         z-index: 35;
         background-image: url('/images/parallax/inp_09_title_medium.png');
         background-size: auto 653px;
@@ -186,7 +185,7 @@ figure {margin: 0; padding: 0;}
 }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
-    .layer-8 { 
+    .layer-8 {
         background-image: url('/images/parallax/inp_09_title_medium_2x.png');
     }
 }
@@ -211,15 +210,15 @@ figure {margin: 0; padding: 0;}
 }
 
 
-@media only screen and (min-width: 40.063em) { 
-    .heroslide.engine { 
-        background-image: url('/images/banner_engine_large.png') 
+@media only screen and (min-width: 40.063em) {
+    .heroslide.engine {
+        background-image: url('/images/banner_engine_large.png')
     }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
-    .heroslide.engine { 
-        background-image: url('/images/banner_engine_large_2x.png') 
+    .heroslide.engine {
+        background-image: url('/images/banner_engine_large_2x.png')
     }
 }
 
@@ -242,15 +241,15 @@ figure {margin: 0; padding: 0;}
 }
 
 
-@media only screen and (min-width: 40.063em) { 
-    .heroslide.connect { 
-        background-image: url('/images/banner_connect_large.png') 
+@media only screen and (min-width: 40.063em) {
+    .heroslide.connect {
+        background-image: url('/images/banner_connect_large.png')
     }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 40.063em), only screen and (min-resolution: 144dpi) and (min-width: 40.063em), only screen and (-webkit-min-device-pixel-ratio: 144) and (min-width: 40.063em), only screen and (min-resolution: 144dppx) and (min-width: 40.063em) {
-    .heroslide.connect { 
-        background-image: url('/images/banner_connect_large_2x.png') 
+    .heroslide.connect {
+        background-image: url('/images/banner_connect_large_2x.png')
     }
 }
 
@@ -276,7 +275,7 @@ figure {margin: 0; padding: 0;}
         transition: background .25s ease;
     }
     .orbit-bullets li.active { background: rgba(212, 212, 212, 1) }
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 40em) {
     .orbit-bullets { display: block }
 }
 h1 {
@@ -286,10 +285,10 @@ h1 {
     font-size: 50px;
     font-family: 'San Francisco 2', 'Helvetica Neue', sans-serif;
 }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     h1 { font-size: 72.5px }
 }
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
     h1 { font-size: 92.5px }
 }
 p {
@@ -321,7 +320,7 @@ p {
     box-shadow: 0px 4px 0px 0px rgba(60, 134, 90, 1);
     margin-top: 10px;
 }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     .heroslide a.kickstarter {
         margin-left: 20px;
         margin-top: 0;
@@ -330,7 +329,7 @@ p {
 }
 .heroslide .battlescape_links { margin-top: 455px }
 .battlescape_links a { width: 80vw }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     .battlescape_links a { width: auto }
 }
 header {
@@ -341,19 +340,19 @@ header {
     left: 0;
     z-index: 300;
     width: 100%;
-    background: -moz-linear-gradient(top,  rgba(10,6,27,0.8) 1%, rgba(10,6,27,0.8) 60%, rgba(10,6,27,0.22) 89%, rgba(10,6,27,0) 100%); 
-    background: -webkit-linear-gradient(top,  rgba(10,6,27,0.8) 1%,rgba(10,6,27,0.8) 60%,rgba(10,6,27,0.22) 89%,rgba(10,6,27,0) 100%); 
-    background: linear-gradient(to bottom,  rgba(10,6,27,0.8) 1%,rgba(10,6,27,0.8) 60%,rgba(10,6,27,0.22) 89%,rgba(10,6,27,0) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a061b', endColorstr='#000a061b',GradientType=0 ); 
+    background: -moz-linear-gradient(top,  rgba(10,6,27,0.8) 1%, rgba(10,6,27,0.8) 60%, rgba(10,6,27,0.22) 89%, rgba(10,6,27,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(10,6,27,0.8) 1%,rgba(10,6,27,0.8) 60%,rgba(10,6,27,0.22) 89%,rgba(10,6,27,0) 100%);
+    background: linear-gradient(to bottom,  rgba(10,6,27,0.8) 1%,rgba(10,6,27,0.8) 60%,rgba(10,6,27,0.22) 89%,rgba(10,6,27,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a061b', endColorstr='#000a061b',GradientType=0 );
 }
 body.bright header {
 	margin-bottom: 0;
 	position: relative;
     background: none;
 }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     header {
-        position: fixed; 
+        position: fixed;
     }
 }
 header .logo {
@@ -371,7 +370,7 @@ body.bright header .logo {
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
-@media only screen and (min-width: 40.063em) and (max-width: 1000px) { 
+@media only screen and (min-width: 40.063em) and (max-width: 1000px) {
     header .logo {
         margin: 19px auto;
         margin-bottom: 0;
@@ -387,7 +386,7 @@ nav {
     margin: 0;
     margin-top: 50px;
 }
-@media only screen and (min-width: 40.063em) and (max-width: 1000px) { 
+@media only screen and (min-width: 40.063em) and (max-width: 1000px) {
     nav {
         margin: 20px auto;
         float: none;
@@ -401,7 +400,7 @@ nav a {
     font-size: 15px;
     margin-right: 60px;
 }
-@media only screen and (min-width: 40.063em) and (max-width: 1000px) { 
+@media only screen and (min-width: 40.063em) and (max-width: 1000px) {
     nav a {
         margin-right: 40px;
     }
@@ -421,7 +420,7 @@ header .mobile-nav-button {
 }
 
 .mobilenavlogo img {
-    opacity: 0.6; 
+    opacity: 0.6;
     margin: 15px;
     width: 200px;
 }
@@ -443,7 +442,7 @@ header .sign-in a:nth-child(2) {
     margin-left: 25px;
 }
 
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     header .sign-in {
         display: block;
         top: 10px;
@@ -467,7 +466,7 @@ header .sign-in a:nth-child(2) {
     text-align: justify;
     text-justify: inter-word;
 }
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
     .noticebar  {
         text-align: center;
         text-justify: inter-word;
@@ -493,7 +492,7 @@ header .sign-in a:nth-child(2) {
         width: auto;
         background-repeat: no-repeat;
     }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     .tiles div a {
         margin-bottom: 0;
         margin: 0 2px;
@@ -516,7 +515,7 @@ header .sign-in a:nth-child(2) {
         background-image: url('/images/tile_engine_small_2x.png');
     }
 }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     .tiles div#engine a {
         background-image: url('/images/tile_engine_medium.png');
         background-size: 418px 225px;
@@ -528,7 +527,7 @@ header .sign-in a:nth-child(2) {
         background-image: url('/images/tile_engine_medium_2x.png');
     }
 }
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
     .tiles div#engine a {
         background-image: url('/images/tile_engine_small.png');
         background-size: 640px 226px;
@@ -555,7 +554,7 @@ header .sign-in a:nth-child(2) {
     }
 }
 
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     .tiles div#studios a {
         background-image: url('/images/tile_studios_medium.png');
         background-size: 418px 225px;
@@ -568,7 +567,7 @@ header .sign-in a:nth-child(2) {
     }
 }
 
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
     .tiles div#studios a {
         background-image: url('/images/tile_studios_small.png');
         background-size: 640px 226px;
@@ -595,7 +594,7 @@ header .sign-in a:nth-child(2) {
     }
 }
 
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     .tiles div#battlescape a {
         background-image: url('/images/tile_battlescape_medium.png');
         background-size: 418px 225px;
@@ -607,7 +606,7 @@ header .sign-in a:nth-child(2) {
         background-image: url('/images/tile_battlescape_medium_2x.png');
     }
 }
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
     .tiles div#battlescape a {
         background-image: url('/images/tile_battlescape_small.png');
         background-size: 640px 226px;
@@ -638,7 +637,7 @@ footer .logo {
     margin: 0 20px;
     display: inline-block;
 }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     footer .logo { margin-right: 40px }
 }
 footer ul {
@@ -655,14 +654,14 @@ footer ul {
         font-weight: 250;
     }
 footer .navigation { margin: 15px }
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
     footer .navigation {
         margin: 15px;
         float: right;
         margin-top: -20px;
     }
 }
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
     footer .navigation {
         margin: 0px;
         display: inline;
